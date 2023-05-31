@@ -45,7 +45,27 @@ body{
     z-index: 100;
     background-color: #A5A6FF;
 }
-
+.mob-menu{
+    position: fixed;
+    top: 50px;
+    right: 0;
+    z-index: 999;
+    width: 200px;
+    height: 100vh;
+    background-color: #fff;
+    text-align: center;
+    padding: 70px 20px 20px;
+    transition: all ease 0.3s;
+    transform: translateX(100%);
+}
+.mob-menu img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+.mob-menu-active{
+    transform: translateX(0);
+}
 section{
     display: flex;
     width: 100%;
@@ -142,11 +162,17 @@ main{
     height: 50px;
     background-color: #ffffff;
     display: flex;
-    justify-content: end;
-    padding-right: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
     position: fixed;
     visibility: hidden;
     z-index: 999;
+}
+.main-menu img{
+    width: 100px;
+    height: 20px;
 }
 .menu-btn{
     width: 50px;
@@ -184,12 +210,17 @@ main{
     transform: rotate(-45deg);
 }
 .home{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     background-color: #effbf8;
-    background-image: url(./images/main.png);
-    background-repeat: no-repeat;
-    background-size: 45%;
-    background-position: 95% 50%;
     padding: 80px 50px;
+}
+.home-img{
+    width: 45%;
+}
+.home-img img{
+    width: 100%;
 }
 .content{
     width: 55%;
@@ -747,7 +778,14 @@ main{
         width: 100%;
     }
     .home{
-        padding: 60px 30px;
+        padding: 80px 30px;
+        flex-direction: column;
+    }
+    .home-img{
+        width: 80%;
+    }
+    .content{
+        width: 100%;
     }
      .about-content, .services, .experience,.projects, .clients,.contacts{
         padding: 30px;
@@ -770,3 +808,11 @@ main{
         width: 100%;
     }
 }
+/* .home{
+    background-color: #effbf8;
+    background-image: url(./images/main.png);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: 95% 50%;
+    padding: 80px 50px;
+} */

@@ -84,9 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
     form.reset();
   });
 });
-
+let mob_menu = document.querySelector(".mob-menu");
 let menu_btn = document.querySelector(".menu-btn");
 menu_btn.addEventListener("click", function (e) {
   e.preventDefault();
   menu_btn.classList.toggle("menu-active");
+  mob_menu.classList.toggle("mob-menu-active");
 });
