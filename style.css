@@ -779,6 +779,9 @@ main{
     }
 }
 @media (max-width: 768px){
+    .swiper{
+        width: 100%;
+    }
     section{
         display: block;
     }
