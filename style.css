@@ -829,4 +829,7 @@ main{
     .contacts-col1, .contacts-col2{
         width: 100%;
     }
+    .about-content .row1 .col1{
+        width: 100%;
+    }
 }
